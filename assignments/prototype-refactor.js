@@ -71,13 +71,12 @@ Prototype Refactor
  
  
  
-//    // === Humanoid (Having an appearance or character resembling that of a human.) ===
-//    function Humanoid(humanoidAttributes) {
-//      GameObject.call(this, humanoidAttributes)
-//      CharacterStats.call(this, humanoidAttributes)
-//    this.team = humanoidAttributes.team;
-//    this.weapons = humanoidAttributes.weapons;
-//    this.language = humanoidAttributes.language;
+   // === Humanoid (Having an appearance or character resembling that of a human.) ===
+  //  function Humanoid(humanoidAttributes) {
+  //   CharacterStats.call(this, humanoidAttributes)
+  //   this.team = humanoidAttributes.team;
+  //   this.weapons = humanoidAttributes.weapons;
+  //   this.language = humanoidAttributes.language;
 //      // * greet() // prototype method -> returns the string '<object name> offers a greeting in <object language>.'
 //      // * should inherit destroy() from GameObject through CharacterStats
 //      // * should inherit takeDamage() from CharacterStats

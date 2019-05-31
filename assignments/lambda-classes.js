@@ -24,6 +24,7 @@ class Instructor extends Person{
     grade(subject){
         console.log(`${this.name} receives a perfect score on ${subject}`)
     }
+
 }
 
 class Student extends Person{
@@ -44,7 +45,7 @@ class Student extends Person{
         console.log(`${this.name} has submitted a PR for ${subject}`)
     }
 
-    sprintChallenge(subject){
+    sprintChallenge(name,subject){
         console.log(`${this.name} has begun sprint challenge on ${subject}`)
     }
 }
@@ -61,8 +62,8 @@ class ProjectManager extends Instructor{
         console.log(`${this.name} announces to ${channel}, @channel standy times!`)
     }
 
-    debugsCode(subject){
-      console.log(`${this.name} debugs ${phil.name}'s code on ${subject}`  )
+    debugsCode(student,subject){
+      console.log(`${this.name} debugs ${student.name}'s code on ${subject}`  )
     }
 
     
@@ -118,7 +119,8 @@ const phil = new Student ({
     catchPhrase: `Just hurry up`,
     previousBackground: 'Lumberjack',
     className: 'web2',
-    favSubjects: ['Html', 'CSS', 'Node.js']
+    favSubjects: ['Html', 'CSS', 'Node.js'],
+    grade: 83,
 })
 const brian = new ProjectManager ({
     name: 'Brian',
@@ -149,4 +151,5 @@ console.log(greg.sprintChallenge('CSS'))
 console.log(phil.PRAssignment('CSS'))
 console.log(phil.listsSubjects())
 console.log(brian.standUp('webpt1'))
-console.log(bill.debugsCode('Node.js'))
+console.log(bill.debugsCode(phil,'Node.js'))
+
