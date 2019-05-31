@@ -60,7 +60,7 @@ Prototype Refactor
  
  class CharacterStats extends GameObject{
      constructor(charAttributes){
-         super(charAttributes)
+        super(charAttributes)
         this.healthPoints = charAttributes.healthPoints;
      }
      takeDamage() {
@@ -90,13 +90,13 @@ Prototype Refactor
  
  class Humanoid extends CharacterStats{
      constructor(humanoidAttributes){
-         super(humanoidAttributes)
+        super(humanoidAttributes)
         this.team = humanoidAttributes.team;
         this.weapons = humanoidAttributes.weapons;
         this.language = humanoidAttributes.language;
      }
      greet() {
-            return `${this.name} offers a greeting in ${this.language}`
+        return `${this.name} offers a greeting in ${this.language}`
       }
  }
   
